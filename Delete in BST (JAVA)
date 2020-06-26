@@ -1,0 +1,5 @@
+// if the node that has to be deleted has only one child, then simply delete that node and that child
+// if the node that has to be deleted has two children, then the node has to be replaced with the closest value
+// closest value can be highest/ lowest closest value
+// conventionally go for closest greater value
+// inorder successor as the key to replace the node to be deleted
