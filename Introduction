@@ -6,3 +6,6 @@
 // binary search trees are represented same as binary trees
 // same int key, left and right references.
 // order has to be maintained while deleting an item
+// if you add the values in increasing/ decreasing order, it will look like a linked list
+// most of the operations of BST like search, insert are O(h). Thats why its important to look at height of BST.
+// ideally we need a balanced binary search tree.
