@@ -1,0 +1,36 @@
+// recursive solution
+
+node insert(node root, int x)
+{
+  if(root==null)
+    return new node(x);
+  else if(root.left<x)
+    root.right = insert(root.right,x) // not return insert(root.right,x) otherwise connection is lost and dry run fails
+  else if(root.right>x)
+    root.left = insert(root.left,x)
+  return root;
+}
+
+time: O(h)
+space: O(h)
+
+// iterative
+
+node insert(node root, int x)
+{
+  node temp = new node(x);
+  node parent = null, curr = root;
+  while(curr!=null)
+  {
+    parent= curr;
+    if(curr.key>x)
+      curr = curr.left;
+    else if(cuur.key<x)
+      curr = curr.right;
+    else
+      return root;
+}
+
+time: O(h)
+space: O(1)
+space wise Iterative is better, it does not cause recursivefunction call except the code is bit lengthier.
