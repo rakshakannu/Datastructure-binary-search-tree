@@ -1,0 +1,8 @@
+// based on binary search algorithm
+// for every node, keys on left are smaller and keys on right are greater
+// all keys are typically considered as distinct
+// like linked list, it is a linked data structure
+// in c++ it is implemented as map, set, multiset, multimap. in java it is implemented using TreeSet and TreeMap.
+// binary search trees are represented same as binary trees
+// same int key, left and right references.
+// order has to be maintained while deleting an item
