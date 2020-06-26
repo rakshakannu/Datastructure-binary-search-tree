@@ -1,0 +1,61 @@
+// return true/false if value is present/not present
+// always remeber the BST property
+
+// method 1
+// recursive code
+
+class node{
+  int key;
+  node left, right;
+  node(int x)
+  {
+    key=x;
+  }
+}
+
+boolean search( node root, int x)
+{
+  if(root=null)
+    return false;
+  else if(root.key=x)
+    return true;
+  else if(root.key<x)
+    return search(root.right,x);
+  else
+    return search(root.left,x);
+}
+
+time: O(h) as they traverse across the height
+space: O(h)
+
+// method 2
+// iterative code
+// we keeo on changing the loop reference in a loop
+
+boolean search(node root, int key)
+{
+  while(root!=null)
+  {
+    if(root.key==null)
+      return false;
+    else if(root.key<x)
+      root=root.right;
+    else
+      root=root.left;
+  }
+  return false;
+}
+
+time: O(h) as they traverse across the height
+space: O(1), its just a loop
+
+NOTE: ITERATIVE IS ALWAYS BETTER THAN RECURSIVE
+The fact is that recursion is rarely the most efficient approach to solving a problem, and iteration is almost always more efficient. This is because there is usually more 
+overhead associated with making recursive calls due to the fact that the call stack is so heavily used during recursion.
+
+CALL STACK: In computer science, a call stack is a stack data structure that stores information about the active subroutines of a computer program. This kind of stack is also 
+known as an execution stack, program stack, control stack, run-time stack, or machine stack, and is often shortened to just "the stack".
+
+NOTE ABOUT SEARCH FUNCTION
+if the tree is skewed, the time can become O(n), and best can become log(n) when it is a cell balanced binary search tree.
+
