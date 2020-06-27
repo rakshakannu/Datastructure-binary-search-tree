@@ -1,0 +1,26 @@
+// we need to find the closest smaller or equal to value.
+// if smaller value is not present, then return null.
+
+// naive solution
+// time: O(n)
+// use any traversal
+
+// efficient solution
+// using BST search
+// comapre the given element with the root and analyse whether to go to left subtree or right subtree.
+
+node floor( node root, int x)
+{
+  node res = null;
+  while(root!=null)
+  {
+    if(root.key==x)
+      return root;
+    else if(root.key>x)
+      root=root.left;
+    else if(root.key<x)
+      res = root;  // potentially root can be the floor!
+      root=root.right;
+  }
+  return res;
+}
