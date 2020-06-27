@@ -4,5 +4,7 @@
 // conventionally go for closest greater value
 // inorder successor as the key to replace the node to be deleted
 
+// in insert and delete the first part is finding the node that has the value.
+
 
 
