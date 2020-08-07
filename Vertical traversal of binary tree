@@ -1,0 +1,14 @@
+// starting from left side we need to print all the nodes with the condition that they fall in the same vertical line
+// we use the concept of horizontal distance, keeping the root at 0 and incerementing and decrementing on the left and the right side
+// we need to take care of order of the nodes, and if two nodes are overlapping, the left child should be given preference
+
+idea:
+we want to maintain nodes in sorted order of horizontal distance
+1. create an empty map (Treemap in java)
+map is a self balancing binary search tree, that maintains key-value pairs, and the items are sorted according to the keys. we use horizontal distnace as the key into this map, and
+we use array of nodes as the values into the treemap. to fill this map, we use level order traversal.
+(int key, array values)
+
+2. do level order traversal and put the values into the map
+
+3. now traverse the map and print the contents
