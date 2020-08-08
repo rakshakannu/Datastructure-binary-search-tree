@@ -1,0 +1,4 @@
+// from the previous actions everyhting had time complexity as O(h), do if the h=n, all these operations will take linear time, and if height is logn then their time also becomes
+O(logn)
+// self balancing BST has the idea that, it should always keep the height in check. we should make sure that height never goes beyond theta(logn).
+// height of BST depends on how the keys are being inserted. same set of keys in a BST can generate different heights
