@@ -33,4 +33,4 @@ node insert(node root, int x)
 
 time: O(h)
 space: O(1)
-space wise Iterative is better, it does not cause recursivefunction call except the code is bit lengthier.
+space wise Iterative is better, it does not cause recursive function call except the code is bit lengthier.
