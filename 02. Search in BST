@@ -30,7 +30,7 @@ space: O(h)
 
 // method 2
 // iterative code
-// we keeo on changing the loop reference in a loop
+// we keep on changing the loop reference in a loop
 
 boolean search(node root, int key)
 {
