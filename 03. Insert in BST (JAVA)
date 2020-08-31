@@ -5,7 +5,7 @@ node insert(node root, int x)
   if(root==null)
     return new node(x);
   else if(root.left<x)
-    root.right = insert(root.right,x) // not return insert(root.right,x) otherwise connection is lost and dry run fails
+    root.right = insert(root.right,x) // Don't use - return insert(root.right,x) , otherwise connection is lost and dry run fails
   else if(root.right>x)
     root.left = insert(root.left,x)
   return root;
