@@ -1,10 +1,17 @@
-// if the node that has to be deleted has only one child, then simply delete that node and that child
+// if the node that has to be deleted has only one child, then simply delete that node and add that child
 // if the node that has to be deleted has two children, then the node has to be replaced with the closest value
-// closest value can be highest/ lowest closest value
+// closest value can be highest/ lowest closest value and both will retain the BST property
 // conventionally go for closest greater value
-// inorder successor as the key to replace the node to be deleted
+// inorder successor is the key( closest greater value) to replace the node that will be deleted
+// because in inorder traversal of binary search tree, the values are always sorted
 
-// in insert and delete the first part is finding the node that has the value.
+// in insert and delete, the first part is finding the node that has the value.
+
+cases for the node to be deleted:
+
+if leaf node: simply delete it
+if node with one child: delete and replace the node with the child
+if node has 2 children: then find inorder successor and replace the node with it
 
 
 
